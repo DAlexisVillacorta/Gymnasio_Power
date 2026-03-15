@@ -1,0 +1,317 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(249, 115, 22, 0.3);
+}
+
+.nav {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+
+.contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.iconoLogo {
+  background: linear-gradient(135deg, #f97316, #eab308);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dumbbellIcon {
+  width: 2rem;
+  height: 2rem;
+  color: #000;
+}
+
+.nombreGym {
+  font-size: 1.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #fb923c, #fbbf24);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 0.05em;
+}
+
+.menuDesktop {
+  display: none;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .menuDesktop {
+    display: flex;
+  }
+}
+
+.enlace {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.enlace::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: linear-gradient(90deg, #f97316, #eab308);
+  transition: width 0.3s ease;
+}
+
+.enlace:hover {
+  color: #fb923c;
+}
+
+.enlace:hover::after {
+  width: 100%;
+}
+
+.perfilLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(249, 115, 22, 0.1);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(249, 115, 22, 0.3);
+}
+
+.perfilLink:hover {
+  background: rgba(249, 115, 22, 0.2);
+  border-color: #f97316;
+}
+
+.avatarSmall {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #f97316;
+}
+
+.avatarPlaceholder {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f97316, #eab308);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconoUser {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #000;
+}
+
+.nombreUsuario {
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.botonLogin {
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #f97316;
+  color: #fb923c;
+  background: transparent;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.botonLogin:hover {
+  background-color: #f97316;
+  color: #000;
+  transform: translateY(-2px);
+}
+
+.botonRegistro {
+  padding: 0.5rem 1.5rem;
+  background: linear-gradient(135deg, #f97316, #eab308);
+  color: #000;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.botonRegistro:hover {
+  background: linear-gradient(135deg, #ea580c, #ca8a04);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(249, 115, 22, 0.4);
+}
+
+.botonLogout {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: 2px solid #ef4444;
+  color: #ef4444;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 0.875rem;
+}
+
+.botonLogout:hover {
+  background-color: #ef4444;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.iconoLogout {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.botonMenuMovil {
+  display: block;
+  background: transparent;
+  border: none;
+  color: #fb923c;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .botonMenuMovil {
+    display: none;
+  }
+}
+
+.iconoMenu {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.menuMovil {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .menuMovil {
+    display: none;
+  }
+}
+
+.enlaceMovil {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding: 0.5rem 0;
+}
+
+.enlaceMovil:hover {
+  color: #fb923c;
+}
+
+.botonLoginMovil {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #f97316;
+  color: #fb923c;
+  background: transparent;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.botonLoginMovil:hover {
+  background-color: #f97316;
+  color: #000;
+}
+
+.botonRegistroMovil {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #f97316, #eab308);
+  color: #000;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.botonRegistroMovil:hover {
+  background: linear-gradient(135deg, #ea580c, #ca8a04);
+}
+
+.botonLogoutMovil {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: transparent;
+  border: 2px solid #ef4444;
+  color: #ef4444;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.botonLogoutMovil:hover {
+  background-color: #ef4444;
+  color: #fff;
+}

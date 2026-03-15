@@ -1,0 +1,160 @@
+.login {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #111827, #000, #1f2937);
+  padding: 1.5rem;
+}
+
+.contenedor {
+  background: linear-gradient(145deg, #1f2937, #111827);
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid #374151;
+  max-width: 450px;
+  width: 100%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.logoHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.iconoLogo {
+  background: linear-gradient(135deg, #f97316, #eab308);
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconoDumbbell {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #000;
+}
+
+.nombreGym {
+  font-size: 1.75rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #fb923c, #fbbf24);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 0.05em;
+}
+
+.titulo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.subtitulo {
+  color: #9ca3af;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  color: #d1d5db;
+  font-weight: 600;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.iconoLabel {
+  width: 1rem;
+  height: 1rem;
+  color: #fb923c;
+}
+
+.input {
+  padding: 0.75rem 1rem;
+  background-color: #111827;
+  border: 1px solid #374151;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #f97316;
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.1);
+}
+
+.error {
+  color: #ef4444;
+  font-size: 0.75rem;
+  margin-top: -0.25rem;
+  display: block;
+}
+
+.botonSubmit {
+  padding: 1rem;
+  background: linear-gradient(135deg, #f97316, #eab308);
+  color: #000;
+  border: none;
+  border-radius: 0.75rem;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.botonSubmit:hover:not(:disabled) {
+  background: linear-gradient(135deg, #ea580c, #ca8a04);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(249, 115, 22, 0.4);
+}
+
+.botonSubmit:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.footer {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.textoFooter {
+  color: #9ca3af;
+  font-size: 0.875rem;
+}
+
+.enlaceRegistro {
+  color: #fb923c;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.enlaceRegistro:hover {
+  color: #f97316;
+}
