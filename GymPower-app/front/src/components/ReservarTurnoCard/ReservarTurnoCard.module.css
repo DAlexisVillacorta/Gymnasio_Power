@@ -1,0 +1,312 @@
+.tarjetaReservar {
+  background: linear-gradient(145deg, #1f2937, #111827);
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+  border: 2px dashed #374151;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 280px;
+  position: relative;
+  overflow: hidden;
+}
+
+.tarjetaReservar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.1), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tarjetaReservar:hover {
+  border-color: #f97316;
+  border-style: solid;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(249, 115, 22, 0.3);
+}
+
+.tarjetaReservar:hover::before {
+  opacity: 1;
+}
+
+.iconoGrande {
+  background: linear-gradient(135deg, #f97316, #eab308);
+  padding: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.icono {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #000;
+}
+
+.titulo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.descripcion {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  position: relative;
+  z-index: 1;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modalContenido {
+  background: linear-gradient(145deg, #1f2937, #111827);
+  border-radius: 1.5rem;
+  border: 1px solid #374151;
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.botonCerrar {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(249, 115, 22, 0.2);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.botonCerrar:hover {
+  background: rgba(249, 115, 22, 0.4);
+  transform: rotate(90deg);
+}
+
+.iconoCerrar {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #fb923c;
+}
+
+.modalHeader {
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 1px solid #374151;
+}
+
+.iconoHeader {
+  background: linear-gradient(135deg, #f97316, #eab308);
+  padding: 1rem;
+  border-radius: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.iconoHeaderDumbbell {
+  width: 2rem;
+  height: 2rem;
+  color: #000;
+}
+
+.tituloModal {
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.subtituloModal {
+  color: #9ca3af;
+  font-size: 0.875rem;
+}
+
+.formulario {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  color: #d1d5db;
+  font-weight: 600;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.iconoLabel {
+  width: 1rem;
+  height: 1rem;
+  color: #fb923c;
+}
+
+.select,
+.input {
+  padding: 0.75rem;
+  background-color: #111827;
+  border: 1px solid #374151;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.select:focus,
+.input:focus {
+  outline: none;
+  border-color: #f97316;
+}
+
+.select option {
+  background-color: #111827;
+  color: #fff;
+}
+
+.infoClase {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  background-color: rgba(249, 115, 22, 0.1);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(249, 115, 22, 0.2);
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #d1d5db;
+  font-size: 0.875rem;
+}
+
+.iconoInfo {
+  width: 1rem;
+  height: 1rem;
+  color: #fb923c;
+}
+
+.gridHorarios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .gridHorarios {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.botonHorario {
+  padding: 0.75rem;
+  background: rgba(249, 115, 22, 0.1);
+  border: 2px solid #374151;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.875rem;
+}
+
+.botonHorario:hover {
+  border-color: #f97316;
+  background: rgba(249, 115, 22, 0.2);
+}
+
+.botonHorarioSeleccionado {
+  padding: 0.75rem;
+  background: linear-gradient(135deg, #f97316, #eab308);
+  border: 2px solid #f97316;
+  border-radius: 0.5rem;
+  color: #000;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.875rem;
+}
+
+.botonSubmit {
+  padding: 1rem;
+  background: linear-gradient(135deg, #f97316, #eab308);
+  color: #000;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.botonSubmit:hover {
+  background: linear-gradient(135deg, #ea580c, #ca8a04);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(249, 115, 22, 0.4);
+}

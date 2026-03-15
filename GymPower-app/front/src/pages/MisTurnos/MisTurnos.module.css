@@ -1,0 +1,148 @@
+.misTurnos {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #111827, #000, #1f2937);
+  color: #fff;
+  padding-top: 5rem;
+}
+
+.contenedor {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.header {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.headerContent {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.iconoHeader {
+  background: linear-gradient(135deg, #f97316, #eab308);
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(249, 115, 22, 0.3);
+}
+
+.iconoGrande {
+  width: 3rem;
+  height: 3rem;
+  color: #000;
+}
+
+.titulo {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .titulo {
+    font-size: 3rem;
+  }
+}
+
+.subtitulo {
+  color: #9ca3af;
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+.seccion {
+  margin-bottom: 3rem;
+}
+
+.tituloSeccion {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contador {
+  color: #fb923c;
+  font-size: 1.25rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.vacio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  text-align: center;
+  background: linear-gradient(145deg, #1f2937, #111827);
+  border-radius: 1.5rem;
+  border: 1px solid #374151;
+}
+
+.iconoVacio {
+  width: 4rem;
+  height: 4rem;
+  color: #fb923c;
+  margin-bottom: 1.5rem;
+}
+
+.tituloVacio {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.textoVacio {
+  color: #9ca3af;
+  font-size: 1rem;
+}
+
+.loading {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 1.125rem;
+  padding: 4rem 0;
+}
+
+.sinTurnos {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem;
+  background: linear-gradient(145deg, #1f2937, #111827);
+  border-radius: 1rem;
+  border: 1px solid #374151;
+}
+
+.sinTurnos p {
+  color: #9ca3af;
+  font-size: 1.125rem;
+}

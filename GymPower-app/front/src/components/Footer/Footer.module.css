@@ -1,0 +1,44 @@
+.footer {
+  background-color: #000;
+  border-top: 1px solid #1f2937;
+  padding: 2rem 1.5rem;
+}
+.contenedor {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.iconoLogo {
+  background: linear-gradient(135deg, #f97316, #eab308);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dumbbellIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #000;
+}
+.nombreGym {
+  font-size: 1.25rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #fb923c, #fbbf24);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.copyright {
+  color: #6b7280;
+  font-size: 0.875rem;
+  text-align: center;
+}

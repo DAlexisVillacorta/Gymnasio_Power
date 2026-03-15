@@ -1,0 +1,47 @@
+cta {
+  padding: 5rem 1.5rem;
+}
+.contenedor {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.tarjeta {
+  background: linear-gradient(135deg, #ea580c, #ca8a04);
+  border-radius: 1.5rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(249, 115, 22, 0.3);
+}
+.titulo {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #000;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+@media (min-width: 768px) {
+  .titulo {
+    font-size: 3rem;
+  }
+}
+.descripcion {
+  font-size: 1.25rem;
+  color: #1f2937;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+.boton {
+  padding: 1rem 2.5rem;
+  background-color: #000;
+  color: #fb923c;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.125rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.boton:hover {
+  background-color: #1f2937;
+  transform: translateY(-3px);
+}

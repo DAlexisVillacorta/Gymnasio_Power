@@ -1,0 +1,19 @@
+.paginaInicio {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #111827, #000, #1f2937);
+  color: #fff;
+  position: relative;
+}
+
+.paginaInicio::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(249, 115, 22, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(234, 179, 8, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+}

@@ -1,0 +1,104 @@
+.servicios {
+  padding: 5rem 1.5rem;
+  background-color: rgba(17, 24, 39, 0.5);
+  position: relative;
+}
+.contenedor {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.titulo {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+@media (min-width: 768px) {
+  .titulo {
+    font-size: 3rem;
+  }
+}
+.tituloDestacado {
+  color: #fb923c;
+}
+.subtitulo {
+  color: #9ca3af;
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.125rem;
+}
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.tarjeta {
+  background: linear-gradient(145deg, #1f2937, #111827);
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid #374151;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+.tarjeta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.1), transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.tarjeta:hover {
+  border-color: #f97316;
+  transform: translateY(-8px);
+  box-shadow: 0 20px 30px rgba(249, 115, 22, 0.3);
+}
+.tarjeta:hover::before {
+  opacity: 1;
+}
+.iconoContainer {
+  color: #fb923c;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+.icono {
+  width: 3rem;
+  height: 3rem;
+  transition: transform 0.3s ease;
+}
+.tarjeta:hover .icono {
+  transform: scale(1.1);
+}
+.tituloTarjeta {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.descripcionTarjeta {
+  color: #9ca3af;
+  line-height: 1.5;
+  position: relative;
+  z-index: 1;
+}
